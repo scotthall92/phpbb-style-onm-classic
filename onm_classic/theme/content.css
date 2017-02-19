@@ -223,7 +223,7 @@ dd.option {
 	padding: 0;
 	line-height: 1.48em;
 	width: 76%;
-	float: left;
+	float: right;
 	position: relative;
 }
 
@@ -693,15 +693,15 @@ fieldset.polls dd div {
 	margin: 5px 0 10px 0;
 	min-height: 80px;
 	border: 1px solid transparent;
-	border-width: 0 0 0 1px;
+	border-width: 0 1px 0 0;
 	width: 22%;
-	float: right;
+	float: left;
 	display: inline;
 }
 
 .postprofile dd, .postprofile dt {
 	line-height: 1.2em;
-	margin-left: 8px;
+	margin-right: 8px;
 }
 
 .postprofile dd {
@@ -761,7 +761,7 @@ dd.profile-contact {
 
 .online {
 	background-image: none;
-	background-position: 100% 0;
+	background-position: 0 0;
 	background-repeat: no-repeat;
 }
 

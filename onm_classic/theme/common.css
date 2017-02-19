@@ -97,6 +97,11 @@ b, strong {
 	font-weight: bold;
 }
 
+b.custom-site-description {
+        font-weight: bold;
+        margin-left: 90px;
+}
+
 i, em {
 	font-style: italic;
 }
@@ -130,10 +135,8 @@ a:hover	{ text-decoration: underline; }
 /* Main blocks
 ---------------------------------------- */
 .wrap {
-	border: 1px solid transparent;
-	border-radius: 8px;
 	margin: 0 auto;
-	max-width: 1152px;
+	max-width: 900px;
 	min-width: 625px;
 	padding: 15px;
 }
@@ -169,8 +172,14 @@ a:hover	{ text-decoration: underline; }
 
 .site_logo {
 	display: inline-block;
-	width: 149px;
-	height: 52px;
+	width: 300px;
+	height: 100px;
+}
+
+.site_logo_footer {
+        display: inline-block;
+        width: 300px;
+        height: 100px;
 }
 
 /* Site description and logo */
@@ -183,37 +192,32 @@ a:hover	{ text-decoration: underline; }
 	margin-right: 0;
 }
 
-/* Round cornered boxes and backgrounds
+/* Straight cornered boxes and backgrounds
 ---------------------------------------- */
 .headerbar {
 	margin-bottom: 4px;
 	padding: 5px;
-	border-radius: 7px;
 }
 
 .navbar {
 	padding: 3px 10px;
-	border-radius: 7px;
 }
 
 .forabg {
 	margin-bottom: 4px;
 	padding: 5px;
 	clear: both;
-	border-radius: 7px;
 }
 
 .forumbg {
 	margin-bottom: 4px;
 	padding: 5px;
 	clear: both;
-	border-radius: 7px;
 }
 
 .panel {
 	margin-bottom: 4px;
 	padding: 5px 10px;
-	border-radius: 7px;
 }
 
 .post {
@@ -221,7 +225,6 @@ a:hover	{ text-decoration: underline; }
 	margin-bottom: 4px;
 	background-repeat: no-repeat;
 	background-position: 100% 0;
-	border-radius: 7px;
 	position: relative;
 }
 
@@ -385,7 +388,6 @@ a.header-avatar span:after {
 	top: 1.2em;
 	z-index: 2;
 	border: 1px solid transparent;
-	border-radius: 5px;
 	padding: 9px 0 0;
 	margin-right: -500px;
 }
