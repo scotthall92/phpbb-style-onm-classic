@@ -5,7 +5,7 @@ Colours and backgrounds for common.css
 
 html, body {
 	color: #536482;
-	background-color: #009BC8;
+	background-color: #b7babf;
 }
 
 h1 {
@@ -35,11 +35,11 @@ hr.footer-seperator {
 Colours and backgrounds for links.css
 -------------------------------------------------------------- */
 
-a { color: #105289; }
-a:hover { color: #105289; }
+a { color: #606060; }
+a:hover { color: #606060; }
 
 a.forumtitle, a.topictitle {
-        color: #009BC6;
+        color: #333333;
 }
 
 /* Links on gradient backgrounds */
@@ -98,15 +98,15 @@ a.forumtitle, a.topictitle {
 }
 
 .headerbar, .forumbg {
-	background-color: #009BC8;
+	background-color: #e30018;
 }
 
 .forabg {
-	background-color: #009BC8;
+	background-color: #e30018;
 }
 
 .navbar {
-	background-color: #CADCEB;
+	background-color: #ebebeb;
 }
 
 .panel {
@@ -123,7 +123,7 @@ a.forumtitle, a.topictitle {
 }
 
 .bg1 {
-	background-color: #ECF3F7;
+        background-color: #F1F1F1;
 }
 
 table.zebra-list tr:nth-child(odd) td, ul.zebra-list li:nth-child(odd) {
@@ -131,7 +131,7 @@ table.zebra-list tr:nth-child(odd) td, ul.zebra-list li:nth-child(odd) {
 }
 
 .bg2 {
-	background-color: #E1EBF2;
+	background-color: #F7F7F7;
 }
 
 table.zebra-list tr:nth-child(even) td, ul.zebra-list li:nth-child(even) {
@@ -325,7 +325,7 @@ Colours and backgrounds for content.css
 -------------------------------------------------------------- */
 
 ul.forums {
-	background-color: #EEF5F9;
+	background-color: #F4F4F4;
 }
 
 ul.topiclist li {
@@ -343,7 +343,7 @@ ul.topiclist dd {
 
 li.row {
 	border-top-color:  #FFFFFF;
-	border-bottom-color: #009BC8;
+	border-bottom-color: #cccccc;
 }
 
 li.row strong {
