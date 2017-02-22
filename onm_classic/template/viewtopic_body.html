@@ -155,6 +155,49 @@
 			<!-- EVENT viewtopic_body_postrow_rank_before -->
 			<!-- IF postrow.RANK_TITLE or postrow.RANK_IMG --><dd class="profile-rank">{postrow.RANK_TITLE}<!-- IF postrow.RANK_TITLE and postrow.RANK_IMG --><br /><!-- ENDIF -->{postrow.RANK_IMG}</dd><!-- ENDIF -->
 			<!-- EVENT viewtopic_body_postrow_rank_after -->
+			<dd>
+            <!-- BEGIN custom_fields -->
+                <!-- IF postrow.custom_fields.PROFILE_FIELD_NAME eq "Banner Creator" -->
+                    <img src="./images/badges/sonm_logo_badge.png" title="{postrow.custom_fields.PROFILE_FIELD_VALUE}"/>
+                <!-- ENDIF -->
+                <!-- IF postrow.custom_fields.PROFILE_FIELD_NAME eq "Video Creator Bronze" -->
+                    <img src="./images/badges/sonm_network_bronze_badge.png" title="{postrow.custom_fields.PROFILE_FIELD_VALUE}"/>
+                <!-- ENDIF -->
+                <!-- IF postrow.custom_fields.PROFILE_FIELD_NAME eq "Video Creator Silver" -->
+                    <img src="./images/badges/sonm_network_silver_badge.png" title="{postrow.custom_fields.PROFILE_FIELD_VALUE}"/>
+                <!-- ENDIF -->
+                <!-- IF postrow.custom_fields.PROFILE_FIELD_NAME eq "Video Creator Gold" -->
+                    <img src="./images/badges/sonm_network_gold_badge.png" title="{postrow.custom_fields.PROFILE_FIELD_VALUE}"/>
+                <!-- ENDIF -->
+                <!-- IF postrow.custom_fields.PROFILE_FIELD_NAME eq "Xmas 2014" -->
+                    <img src="./images/badges/xmas_2014_badge.png" title="{postrow.custom_fields.PROFILE_FIELD_VALUE}"/>
+                <!-- ENDIF -->
+                <!-- IF postrow.custom_fields.PROFILE_FIELD_NAME eq "Xmas 2015" -->
+                    <img src="./images/badges/xmas_2015_badge.png" title="{postrow.custom_fields.PROFILE_FIELD_VALUE}"/>
+                <!-- ENDIF -->
+                <!-- IF postrow.custom_fields.PROFILE_FIELD_NAME eq "Summer Awards 2015 Gold" -->
+                    <img src="./images/badges/summer_awards_2015_gold_badge.png" title="{postrow.custom_fields.PROFILE_FIELD_VALUE}"/>
+                <!-- ENDIF -->
+                <!-- IF postrow.custom_fields.PROFILE_FIELD_NAME eq "Summer Awards 2015 Silver" -->
+                    <img src="./images/badges/summer_awards_2015_silver_badge.png" title="{postrow.custom_fields.PROFILE_FIELD_VALUE}"/>
+                <!-- ENDIF -->
+                <!-- IF postrow.custom_fields.PROFILE_FIELD_NAME eq "Summer Awards 2015 Bronze" -->
+                    <img src="./images/badges/summer_awards_2015_bronze_badge.png" title="{postrow.custom_fields.PROFILE_FIELD_VALUE}"/>
+                <!-- ENDIF -->
+                <!-- IF postrow.custom_fields.PROFILE_FIELD_NAME eq "Smash Tournament Bronze" -->
+                    <img src="./images/badges/sonm_smash_tournament_bronze_badge.png" title="{postrow.custom_fields.PROFILE_FIELD_VALUE}"/>
+                <!-- ENDIF -->
+                <!-- IF postrow.custom_fields.PROFILE_FIELD_NAME eq "Smash Tournament Silver" -->
+                    <img src="./images/badges/sonm_smash_tournament_silver_badge.png" title="{postrow.custom_fields.PROFILE_FIELD_VALUE}"/>
+                <!-- ENDIF -->
+                <!-- IF postrow.custom_fields.PROFILE_FIELD_NAME eq "Smash Tournament Gold" -->
+                    <img src="./images/badges/sonm_smash_tournament_gold_badge.png" title="{postrow.custom_fields.PROFILE_FIELD_VALUE}"/>
+                <!-- ENDIF -->
+                <!-- IF postrow.custom_fields.PROFILE_FIELD_NAME eq "Retro Week 2016" -->
+                    <img src="./images/badges/retro_week_2016_badge.png" title="{postrow.custom_fields.PROFILE_FIELD_VALUE}"/>
+                <!-- ENDIF -->
+            <!-- END custom_fields -->
+            </dd>
 
 		<!-- IF postrow.POSTER_POSTS != '' --><dd class="profile-posts"><strong>{L_POSTS}{L_COLON}</strong> <!-- IF postrow.U_SEARCH !== '' --><a href="{postrow.U_SEARCH}"><!-- ENDIF -->{postrow.POSTER_POSTS}<!-- IF postrow.U_SEARCH !== '' --></a><!-- ENDIF --></dd><!-- ENDIF -->
 		<!-- IF postrow.POSTER_JOINED --><dd class="profile-joined"><strong>{L_JOINED}{L_COLON}</strong> {postrow.POSTER_JOINED}</dd><!-- ENDIF -->
@@ -167,9 +210,25 @@
 
 		<!-- EVENT viewtopic_body_postrow_custom_fields_before -->
 		<!-- BEGIN custom_fields -->
-			<!-- IF not postrow.custom_fields.S_PROFILE_CONTACT -->
-				<dd class="profile-custom-field profile-{postrow.custom_fields.PROFILE_FIELD_IDENT}"><strong>{postrow.custom_fields.PROFILE_FIELD_NAME}{L_COLON}</strong> {postrow.custom_fields.PROFILE_FIELD_VALUE}</dd>
-			<!-- ENDIF -->
+			<!-- IF postrow.custom_fields.PROFILE_FIELD_NAME eq "NNID" -->
+                <dd><strong>{postrow.custom_fields.PROFILE_FIELD_NAME}:</strong> {postrow.custom_fields.PROFILE_FIELD_VALUE}</dd>
+            <!-- ENDIF -->
+
+            <!-- IF postrow.custom_fields.PROFILE_FIELD_NAME eq "3DS Friend Code" -->
+                <dd><strong>{postrow.custom_fields.PROFILE_FIELD_NAME}:</strong> {postrow.custom_fields.PROFILE_FIELD_VALUE}</dd>
+            <!-- ENDIF -->
+
+            <!-- IF postrow.custom_fields.PROFILE_FIELD_NAME eq "PSN ID" -->
+                <dd><strong>{postrow.custom_fields.PROFILE_FIELD_NAME}:</strong> {postrow.custom_fields.PROFILE_FIELD_VALUE}</dd>
+            <!-- ENDIF -->
+
+            <!-- IF postrow.custom_fields.PROFILE_FIELD_NAME eq "Xbox Gamertag" -->
+                <dd><strong>{postrow.custom_fields.PROFILE_FIELD_NAME}:</strong> {postrow.custom_fields.PROFILE_FIELD_VALUE}</dd>
+            <!-- ENDIF -->
+
+            <!-- IF postrow.custom_fields.PROFILE_FIELD_NAME eq "Steam ID" -->
+                <dd><strong>{postrow.custom_fields.PROFILE_FIELD_NAME}:</strong> {postrow.custom_fields.PROFILE_FIELD_VALUE}</dd>
+            <!-- ENDIF -->
 		<!-- END custom_fields -->
 		<!-- EVENT viewtopic_body_postrow_custom_fields_after -->
 
