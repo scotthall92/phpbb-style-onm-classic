@@ -814,6 +814,7 @@ fieldset.fields1 dl.pmlist dd.recipients {
 	float: right;
 	text-align: right;
 	width: auto;
+	margin-bottom: 0.3em;
 }
 
 .action-bar.bar-bottom .pagination {
@@ -840,7 +841,7 @@ fieldset.fields1 dl.pmlist dd.recipients {
 }
 
 .pagination li a, .pagination li span {
-	border-radius: 2px;
+	border-radius: 0px;
 	padding: 2px 5px;
 }
 
@@ -888,7 +889,7 @@ fieldset.fields1 dl.pmlist dd.recipients {
 }
 
 .row .pagination li a, .row .pagination li span {
-	border-radius: 2px;
+	border-radius: 0px;
 	padding: 1px 3px;
 	font-size: 9px;
 }
