@@ -136,12 +136,11 @@ a:hover	{ text-decoration: underline; }
 ---------------------------------------- */
 .wrap {
 	margin: 0 auto;
-	max-width: 900px;
 	min-width: 625px;
 	padding: 15px;
 }
 
-@media only screen and (max-width: 1220px), only screen and (max-device-width: 1220px) {
+@media only screen {
 	.wrap {
 		margin: 0 12px;
 	}
