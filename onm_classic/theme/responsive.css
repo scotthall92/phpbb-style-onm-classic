@@ -513,6 +513,10 @@
 
 	/* Misc stuff
 	----------------------------------------*/
+	.custom-hide-span {
+		display: none;
+	}
+
 	h2 {
 		margin-top: .5em;
 	}
